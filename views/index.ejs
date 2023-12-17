@@ -52,7 +52,7 @@
 <button id="syncButton">Push notification</button>
 <script>
 async function initBackgroundSync() {
-    const syncButton = document.querySelector('#sync-button');
+    const syncButton = document.getElementById('syncButton');
     try {
       const registration = await navigator.serviceWorker.getRegistration();
       if (registration && 'sync' in registration) {

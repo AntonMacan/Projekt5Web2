@@ -23,7 +23,7 @@ self.addEventListener('install', (event) => {
 
  self.addEventListener('sync', e => {
   e.waitUntil(
-    self.registration.showNotification(title, options)
+    self.registration.showNotification("notification")
     .catch(err => console.log(err))
   )
 }); 
