@@ -43,6 +43,10 @@ app.use(function (req, res, next) {
 app.use('/', router);
 app.use('/camera', cameraRoute);
 
+app.get('/cat', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'cat.jpg'));
+});
+
 const server = http.createServer(app)
   .listen(port, () => {
     console.log(`Listening on ${config.baseURL}`);

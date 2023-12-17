@@ -1,10 +1,7 @@
 const CACHE_NAME = 'PWAs';
 const urlsToCache = [
   '/',
-  'views/index.ejs',
-  'views/camera.ejs', 
-  'routes/camera.js',  
-  'routes/index.js' 
+  '../cat.jpg'
 ];
 
 self.addEventListener('install', (event) => {
